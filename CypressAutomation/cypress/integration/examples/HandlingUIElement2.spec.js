@@ -16,9 +16,6 @@ describe('UI Elements', () => {
 
       cy.get('input[type="checkbox"]').check(['Cricket','Hockey','Movies'])
       
-      
-
-
 
     }
     )
@@ -32,7 +29,7 @@ describe('UI Elements', () => {
     it('Language Multiselect', function(){
         cy.get('#msdd').click()
         cy.get('.ui-corner-all').contains('English').click()
-        cy.get('.ui-corner-all').contains('Japanese').click()
+        
 
 
     } 

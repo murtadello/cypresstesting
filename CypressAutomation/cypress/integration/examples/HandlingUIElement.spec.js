@@ -10,10 +10,13 @@ describe('UI Elements', () => {
       cy.get("#nav-mobile > li:nth-child(1) > a").click()
 
       cy.get(":nth-child(9) > .btn").click() // open the registration form
-      
 
+    })
+    it("Verify the google form", ()=>{
 
+      cy.visit("https://docs.google.com/__/#/tests/integration\examples\HandlingUIElement.spec.js")
 
+      cy.get('.quantumWizTextinputPaperinputInput').type("Mung")
     })
 
     
